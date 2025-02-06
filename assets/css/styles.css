@@ -1,66 +1,83 @@
-           body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
-            color: white;
-            text-align: center;
-        }
-        .container {
-            width: 90%;
-            max-width: 600px;
-            background: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            font-size: 24px;
-        }
-        .quote {
-            font-style: normal;
-            font-size: 20px;
-            margin: 20px 0;
-        }
-        .author {
-            font-weight: bold;
-            font-size: 18px;
-        }
-        .image {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-        p{
-           font-size: 18px;
-           }
-        .button, .btn {
-            display: inline-block;
-            background: #FB6ED5;
-            color: #8EFB6E;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background 0.3s;
-            text-decoration: none;
-            margin: 10px 5px;
-        }
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 20px;
-            }
-            .quote {
-                font-size: 18px;
-            }
-            .author {
-                font-size: 16px;
-            }
-        }
+          /* Styling for the body of the page */
+body {
+    font-family: 'Arial', sans-serif; /* Sets the font family for text */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses Flexbox for layout */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    min-height: 100vh; /* Ensures the body takes full viewport height */
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Background gradient from one color to another */
+    color: white; /* Sets text color to white */
+    text-align: center; /* Centers text horizontally */
+}
+
+/* Container styling for the content */
+.container {
+    width: 90%; /* Ensures container takes up 90% of the available width */
+    max-width: 600px; /* Limits the container's maximum width */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 20px; /* Adds padding inside the container */
+    border-radius: 10px; /* Rounds the corners of the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a soft shadow effect */
+}
+
+/* Styling for the main heading */
+h1 {
+    font-size: 24px; /* Sets the font size */
+}
+
+/* Styling for the quote text */
+.quote {
+    font-style: normal; /* Ensures the quote is not italicized */
+    font-size: 20px; /* Sets the font size */
+    margin: 20px 0; /* Adds vertical spacing around the quote */
+}
+
+/* Styling for the author's name */
+.author {
+    font-weight: bold; /* Makes the author's name bold */
+    font-size: 18px; /* Sets the font size */
+}
+
+/* Styling for the image */
+.image {
+    width: 100%; /* Makes the image take full width of its container */
+    max-width: 200px; /* Limits the maximum width of the image */
+    height: auto; /* Ensures the image keeps its aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the image */
+    margin: 15px 0; /* Adds vertical spacing around the image */
+}
+
+/* Styling for regular paragraphs */
+p {
+    font-size: 18px; /* Sets the font size */
+}
+
+/* Styling for buttons and links with button styling */
+.button, .btn {
+    display: inline-block; /* Ensures the buttons appear inline */
+    background: #FB6ED5; /* Sets the background color of buttons */
+    color: #8EFB6E; /* Sets the text color of buttons */
+    padding: 10px 15px; /* Adds padding inside the buttons */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounds the corners of the buttons */
+    font-size: 16px; /* Sets the font size */
+    cursor: pointer; /* Changes cursor to a pointer when hovering */
+    transition: background 0.3s; /* Adds a smooth transition effect for background color */
+    text-decoration: none; /* Removes underline from links */
+    margin: 10px 5px; /* Adds spacing around the buttons */
+}
+
+/* Media query for smaller screens (max-width: 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Reduces the font size of the heading on small screens */
+    }
+    .quote {
+        font-size: 18px; /* Reduces the font size of the quote on small screens */
+    }
+    .author {
+        font-size: 16px; /* Reduces the font size of the author text on small screens */
+    }
+}
